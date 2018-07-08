@@ -41,19 +41,23 @@ btborder:focus-within {
   box-shadow: inset 0 1px 1px #fff, 0 0 8px #ff9b9b;
 }
 
+#loading, #results {
+  display: none;
+}
+
 .spinner {
   content: "";
   box-sizing: border-box;
-  position: absolute;
-  top:50%;
-  left: 50%;
-  height: 60px;
-  width: 60%;
-  margin-top: -30px;
+  top:70%;
+  left: 60%;
+  height: 30px;
+  width: 30px;
+  margin-top: -10px;
+  margin-left: 50%;
   margin-bottom: -30px;
   border-radius: 50%;
-  border:3px solid red;
-  border-top-color: #ff9b9b;
+  border:3px solid #ff9b9b;
+  border-top-color: red;
   animation: spinner 0.7s linear infinite;
 }
 
@@ -62,3 +66,5 @@ btborder:focus-within {
     transform: rotate(360deg);
   }
 }
+
+
